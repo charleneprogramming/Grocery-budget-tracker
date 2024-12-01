@@ -1,0 +1,99 @@
+body{
+    margin:0;
+    background-image: linear-gradient(to right, rgba(71, 71, 71, 0.923), rgb(20, 18, 18));
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vh 0;
+}
+
+.main{
+    margin-top:5vh;
+}
+
+.logos img{
+    height:9vh;
+    width:9vh;
+    border-radius: 50%;
+    margin: 5px 6vh;
+}
+
+.about{
+    margin-right: 10vh;
+    color:#e7d8d8;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    
+
+}
+
+/* Define a fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the fade-in animation */
+.page-animation {
+  animation: fadeIn 1s ease-out; /* Adjust duration and easing as needed */
+}
+
+/* Additional styling for header, main, etc. if needed */
+.header, .main {
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+
+.about:hover{
+    color:white;
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    height: 75vh;
+    width:90vh;
+    border-radius: 7vh;
+    
+}
+
+.tagline{
+    width:38%;
+    margin:10vh;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.tagline h1{
+    font-weight: bold;
+    font-size: 4vh;
+    color: #e7d8d8;
+}
+
+.tagline button{
+    margin-top:5vh;
+    font-weight: bold;
+    background-color:  #3e3e3e;
+    border-radius: 6px;
+    border:none;
+    color: white;
+    padding:13px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tagline button:hover{
+    background-color: #f8d110e0;
+    transform: scale(1.1);
+
+}
